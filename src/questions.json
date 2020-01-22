@@ -1,0 +1,30 @@
+[
+  {
+    "question": "What is the Capital Of India ?",
+    "optionA": "New Delhi",
+    "optionB": "Mumbai",
+    "optionC": "Kolkata",
+    "answer": "New Delhi"
+  },
+  {
+    "question": "Who is the CEO of Tesla Motors?",
+    "optionA": "Bill Gates",
+    "optionB": "Steve Jobs",
+    "optionC": "Elon Musk",
+    "answer": "Elon Musk"
+  },
+  {
+    "question": "Name the World's Richest Man.",
+    "optionA": "Jeff Bezos",
+    "optionB": "Bill Gates",
+    "optionC": "Mark Zuckerberg",
+    "answer": "Jeff Bezos"
+  },
+  {
+    "question": "Name the World's Longest River.",
+    "optionA": "Nile",
+    "optionB": "Amazon",
+    "optionC": "Godavari",
+    "answer": "Nile"
+  }
+]

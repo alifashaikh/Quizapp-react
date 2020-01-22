@@ -1,0 +1,131 @@
+.questions {
+  background-color: $off-white;
+  border-radius: 12px;
+  box-shadow: 3px 3px 3px yellow;
+  width: 80%;
+  margin: $lg auto 0 auto;
+  padding: $sm $md;
+  font-family: "Special Elite", cursive;
+
+  h2 {
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  .lifeline-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lifeline {
+    position: relative;
+    top: -3px;
+  }
+
+  .lifeline-icon {
+    color: $green;
+    cursor: pointer;
+  }
+
+  .lifeline-icon:hover {
+    background: none;
+    color: darken($red, 10%);
+  }
+
+  h5 {
+    font-size: 25px;
+    margin-bottom: lg;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .options-container {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+  }
+
+  .option {
+    background-color: black;
+    border-radius: $button-radius;
+    color: $white;
+    cursor: pointer;
+    margin: $md auto;
+    padding: $normal;
+    transition: 0.4s linear all;
+    text-align: center;
+    width: 90%;
+    font-weight: bold;
+  }
+
+  .option:hover {
+    background-color: darken($blue, 20%);
+  }
+}
+
+.button-container {
+  display: inline-block;
+  justify-content: flex-start;
+  margin: 0 auto $sm auto;
+  padding: $md;
+  width: 80%;
+}
+
+.button-container button {
+  border: none;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: $md;
+  padding: $xs $sm;
+}
+
+.button-container button:first-child {
+  background-color: darken($blue, 10%);
+  box-shadow: $shadow;
+  transition: 0.4s linear all;
+}
+
+.button-container button:first-child:hover {
+  background-color: darken($blue, 20%);
+}
+
+.button-container button:nth-child(2) {
+  background-color: $green;
+  margin-top: 5px;
+  box-shadow: $shadow;
+  transition: 0.4s linear all;
+}
+
+.button-container button:nth-child(2):hover {
+  background-color: darken($green, 10%);
+}
+
+.button-container button:last-child {
+  background-color: $red;
+  margin-top: 5px;
+  box-shadow: $shadow;
+  transition: 0.4s linear all;
+}
+
+.button-container button:last-child:hover {
+  background-color: darken($red, 10%);
+}
+@media (max-width: 768px) {
+  .questions {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 85% !important;
+    height: 85% !important;
+  }
+}
+@media (max-width: $md-breakpoint) {
+  .options-container {
+    width: 85%;
+    height: 150%;
+  }
+}

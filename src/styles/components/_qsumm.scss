@@ -1,0 +1,115 @@
+.quiz-summary {
+  font-family: "Special Elite", cursive;
+  font-weight: bold;
+  span.success-icon {
+    color: $green;
+    font-size: $xxlg;
+  }
+
+  h1 {
+    color: darkturquoise;
+    text-align: center;
+    font-size: $lg;
+    margin-top: -$sm;
+    background-color: black;
+    font-weight: bold;
+  }
+
+  h2 {
+    color: palevioletred;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  h4 {
+    color: rgb(221, 58, 85);
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .stats {
+    background-color: white;
+    max-width: 50%;
+    padding: $sm $md $md $md;
+  }
+
+  .stats h4,
+  .stats h2 {
+    text-align: center;
+  }
+
+  .stats .stat {
+    color: black;
+    font-size: 14px;
+  }
+
+  section ul {
+    margin-top: $sm;
+    text-align: center;
+    margin-bottom: $sm;
+  }
+
+  section ul li {
+    display: inline-block;
+  }
+
+  section ul li a {
+    padding: $sm !important;
+    color: white;
+  }
+
+  section ul li a:hover {
+    color: black;
+  }
+
+  section ul li:first-child {
+    border: 1px solid yellow;
+    border-radius: 5px;
+    margin-right: $sm;
+    transition: 0.4s linear all;
+  }
+
+  section ul li:first-child:hover {
+    background-color: yellow;
+  }
+
+  section ul li:last-child {
+    border: 1px solid cyan;
+    border-radius: 5px;
+    transition: 0.4s linear all;
+  }
+
+  section ul li:last-child:hover {
+    background-color: cyan;
+  }
+
+  section ul li:last-child a {
+    color: white;
+  }
+
+  section ul li:last-child a:hover {
+    color: black;
+  }
+
+  .no-stats {
+    color: black;
+    margin: $xxlg auto;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quiz-summary {
+    font-size: $sm;
+    margin-left: 50px;
+    margin-right: auto;
+  }
+
+  div.container.stats {
+    margin: 0;
+    padding: $sm;
+    max-width: 100%;
+    width: 100%;
+  }
+}

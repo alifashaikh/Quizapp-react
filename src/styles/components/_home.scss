@@ -1,0 +1,92 @@
+#home {
+  background-image: url("../../assets/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Special Elite", cursive;
+
+  section {
+    background-color: black;
+    box-shadow: 1px 1px 1px 1px chartreuse;
+    border-radius: 5px;
+    padding-left: $md;
+    padding-right: $md;
+    height: 400px;
+    width: 300px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .play-button-container {
+    width: 100%;
+  }
+
+  a.play-button {
+    background-color: greenyellow;
+    font-weight: bold;
+    border-radius: $button-radius;
+    color: black;
+    display: block;
+    cursor: pointer;
+    padding: $normal;
+    margin-top: 100px;
+    text-align: center;
+    transition: 0.4s linear all;
+  }
+
+  a.play-button:hover {
+    background-color: darken($green, 10%);
+    box-shadow: $shadow;
+  }
+
+  .auth-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: $lg;
+  }
+
+  #login-button {
+    background-color: $red;
+    margin: auto;
+  }
+  #login-button:hover {
+    background-color: darken($red, 10%);
+    box-shadow: $shadow;
+  }
+
+  // #signup-button {
+  //   background-color: $blue;
+  // }
+  // #signup-button:hover {
+  //   background-color: darken($blue, 10%);
+  //   box-shadow: $shadow;
+  // }
+
+  .auth-container .auth-buttons {
+    color: #fff;
+    cursor: pointer;
+    border-radius: $button-radius;
+    padding: $normal 0;
+    text-align: center;
+    transition: 0.3s linear all;
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  #home section,
+  .auth-container {
+    padding: 0 $normal;
+    width: 70%;
+    height: 70%;
+  }
+}

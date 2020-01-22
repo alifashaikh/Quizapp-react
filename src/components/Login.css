@@ -1,0 +1,78 @@
+.box {
+  width: 400px;
+  height: 400px;
+  background: #000000;
+  color: #00ffff;
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px cyan;
+  font-family: "Special Elite", cursive;
+  border-radius: 12px;
+  font-size: 35px;
+}
+.box {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.box input {
+  width: 100%;
+  margin-top: 50px;
+}
+.box input[type="email"] {
+  border: none;
+  border-bottom: 2px solid #00ffff;
+  outline: none;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+}
+
+.box input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #00ffff;
+  outline: none;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 150px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  text-align: center;
+}
+.box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+h4 {
+  margin-top: 50px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 40px;
+}
+.box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    padding: 0 1rem;
+    width: 70%;
+    height: 70%;
+  }
+}
